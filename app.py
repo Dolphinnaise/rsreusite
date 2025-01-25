@@ -60,7 +60,7 @@ def index():
                     <p><strong>Жанр:</strong> {{ afisha.genre }}</p>
                     <p><strong>Описание:</strong> {{ afisha.description }}</p>
                     <p><strong>Дата выхода:</strong> {{ afisha.release_date }}</p>
-                    <img src="{{ url_for('static', filename=afisha.poster) }}" width="100" alt="{{ afisha.title }}">
+                    <img src="{{ url_for('static', filename=afisha.poster) }}" width="300" alt="{{ afisha.title }}">
                     <p><a href="{{ url_for('edit_afisha', id=afisha.id) }}" class="button">Редактировать</a>
                     <a href="{{ url_for('delete_afisha', id=afisha.id) }}" class="button">Удалить</a></p>
                 </div>
